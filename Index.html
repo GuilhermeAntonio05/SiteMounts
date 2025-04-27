@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recriando | Mounts Ti Curriculo</title>
         <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
     </head>
     <body>
         <div class="container">
@@ -30,33 +31,35 @@
             </nav>
 
             <header class="imagemTrabalheConosco">
-                <h3>Trabalhe</h3>
-                <h1>Conosco</h1>
+                <h3 class="mb-0">Trabalhe</h3>
+                <h1 class="mt-0">Conosco</h1>
             </header>
 
-            <div class="conteudo">
+            <div class="formConteudo">
                 <section class="text">
                     <p>
-                        Estamos constantemente em busca de profissionais
-                        talentosos para se juntarem à equipe da Mouts.
+                        Estamos constantemente em busca de <b> profissionais
+                            talentosos </b> para se juntarem à equipe da Mouts.
                     </p>
-
+                    <br>
                     <p>
                         Ser parte de nosso time significa estar em um ambiente
                         inspirador, agradável e flexível, onde você será
                         desafiado constantemente.
                     </p>
-
+                    <br>
                     <p>
-                        Na Mouts, estamos sempre crescendo e valorizando cada
-                        conquista, juntamente com nossos profissionais.
+                        Na Mouts, estamos sempre crescendo e <b> valorizando cada
+                        conquista,</b> juntamente com nossos profissionais.
                     </p>
+                    <br>
 
                     <img width="570" height="381"
                         src="https://mouts.info/wp-content/uploads/2024/06/trabaie.png">
                 </section>
 
-                <section class="form">
+                <section class="form ml-10">
+                    <h1>Envie o seu currículo</h1>
                     <input type="text" placeholder="Nome">
                     <input type="text" placeholder="E-mail">
                     <input type="text" placeholder="WhatsApp">
@@ -73,13 +76,13 @@
 
                     <h5>Conhecimento & Tecnologias</h5>
                     <ul>
-                        <input type="checkbox"><label>Teste1</label>
-                        <input type="checkbox"><label>Teste2</label>
-                        <input type="checkbox"><label>Teste3</label>
+                        <label><input type="checkbox">Teste1</label>
+                        <label><input type="checkbox">Teste2</label>
+                        <label><input type="checkbox">Teste3</label>
                     </ul>
 
-                    <input type="checkbox">
-                    <label> Li e concordo com a Política
+                    
+                    <label> <input type="checkbox"> Li e concordo com a Política
                         de Privacidade, que pode usar as informações aqui
                         fornecidas por mim para entrar em contato comigo, via
                         e-mail, telefone ou WhatsApp, para possíveis ações de
@@ -88,7 +91,10 @@
                         dados pessoais a qualquer momento enviando um e-mail
                         para dpo@mouts.info
                     </label>
-                    <button> Enviar -></button>
+                    <div class="botao">
+                        <button onclick="enviarCurriculo()"> Enviar -></button>
+                    </div>
+                    <p id="mensagem"></p>
                 </section>
             </div>
 

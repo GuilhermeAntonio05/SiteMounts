@@ -4,10 +4,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  background-color: rebeccapurple;
-}
-
 /* Área do header */
 
 .header {
@@ -47,25 +43,121 @@ body {
   width: 180px;
 }
 
-.headerButton:hover{
+.headerButton:hover {
   transition: color 0.5s, background-color 0.5s;
   background-color: #5ba584;
   color: white;
   cursor: pointer;
 }
 
+/* Área do Formulário */
+
+.formConteudo {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 60px;
+  justify-content: center;
+}
+
+.formConteudo section {
+  width: 570px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #5ba584;
+  border-radius: 30px;
+}
+
+.form input {
+  padding: 10px;
+  margin: 0px 0px 10px 0px;
+  border: none;
+  border-radius: 10px;
+}
+
+.form h1 {
+  color: white;
+  text-align: center;
+}
+
+.form ul {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.botao{
+    margin-top: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.form button{
+    background-color: #5ba584;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: solid 1px white;
+    border-radius: 10px;
+    transition: color 0.5s, background-color 0.5s;
+}
+.form button:hover{
+    background-color: white;
+    color: #5ba584;
+    cursor: pointer;
+}   
+
+/* Área do carrocel */
+
 .imagemTrabalheConosco {
-  background-color: grey;
+  background-color: #dbdde3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 250px;
 }
+.imagemTrabalheConosco h3 {
+  font-weight: 400;
+  font-size: 40px;
+  color: #66aa8c;
+}
+
+.imagemTrabalheConosco h1 {
+  font-size: 80px;
+  color: #29333d;
+}
+
+/* Área do NewsLetter */
 
 .sectionNewsletter {
-  background-color: aqua;
+  background-color: #5ba584;
+}
+
+/* Footer */
+
+footer {
+  background-color: #29333d;
 }
 
 /* Utilitários */
 
 .ml-10 {
   margin-left: 10px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
 }
